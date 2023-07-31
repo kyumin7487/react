@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App'; // 이 부분이 App 컴포넌트를 한 번만 import하도록 해야 합니다.
+import ReactComponent from './react'; // 파일명과 컴포넌트 이름을 소문자로 변경합니다.
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ReactComponent /> {/* 수정된 컴포넌트 이름으로 사용합니다. */}
   </React.StrictMode>
 );
